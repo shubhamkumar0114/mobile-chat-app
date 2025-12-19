@@ -28,7 +28,7 @@ const Login = () => {
   };
   return (
     <div>
-      <div className="mockup-phone h-screen">
+      <div className="mockup-phone h-screen bg-zinc-900">
         <div className="mockup-phone-camera"></div>
         <div className="mockup-phone-display text-white grid bg-neutral-900">
           <div className="hero  bg-base-200 min-h-screen">

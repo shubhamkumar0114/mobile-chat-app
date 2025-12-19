@@ -9,7 +9,7 @@ const Message = () => {
 
   return (
     <div className="">
-      <div className="mockup-phone h-screen ">
+      <div className="mockup-phone h-screen bg-zinc-900">
         <div className="mockup-phone-display text-white grid bg-neutral-900">
           <div>
             <MessageNav />

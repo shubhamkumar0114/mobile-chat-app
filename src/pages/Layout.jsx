@@ -17,9 +17,9 @@ const Layout = () => {
   }
   return (
     <>
-      <div className="mockup-phone h-screen">
+      <div className="mockup-phone h-screen bg-zinc-900">
         <div className="mockup-phone-camera"></div>
-        <div className="mockup-phone-display text-white grid bg-neutral-900">
+        <div className="mockup-phone-display text-white grid bg-neutral-200">
           <div className=" flex gap-2 bg-zinc-900">
             <div className="w-full md:w-[36vw] px-0">
               <Navbar setPage={setPage} />
