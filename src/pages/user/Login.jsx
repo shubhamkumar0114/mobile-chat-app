@@ -28,51 +28,42 @@ const Login = () => {
   };
   return (
     <div>
-      <div className="mockup-phone h-screen bg-zinc-900">
-        <div className="mockup-phone-camera"></div>
-        <div className="mockup-phone-display text-white grid bg-neutral-900">
-          <div className="hero  bg-base-200 min-h-screen">
-            <div className="hero-content w-full flex-col lg:flex-row-reverse">
-              <div className="text-center lg:text-left">
-                <h1 className="text-xl font-bold">Login now!</h1>
-              </div>
-              <div className="card  w-full">
-                <div className="">
-                  <form action="" onSubmit={handleOnSubmit}>
-                    <fieldset className="fieldset">
-                      <label className="label">Email</label>
-                      <input
-                        type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        className="input rounded-lg"
-                        placeholder="Email"
-                      />
-                      <label className="label">Password</label>
-                      <input
-                        type="password"
-                        className="input rounded-lg"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        placeholder="Password"
-                      />
-                      <div className="flex justify-between items-center px-2">
-                        <Link to={""} className="link link-hover">
-                          Forgot password?
-                        </Link>
-                        <Link to={"/signup"} className="link link-hover mr-4">
-                          Signup
-                        </Link>
-                      </div>
-                      <input
-                        type="submit"
-                        value={"Login"}
-                        className="btn  mt-4"
-                      />
-                    </fieldset>
-                  </form>
-                </div>
-              </div>
+      <div className="hero  bg-base-200 min-h-screen">
+        <div className="hero-content w-full flex-col lg:flex-row-reverse">
+          <div className="text-center lg:text-left">
+            <h1 className="text-xl font-bold">Login now!</h1>
+          </div>
+          <div className="card  w-full">
+            <div className="">
+              <form action="" onSubmit={handleOnSubmit}>
+                <fieldset className="fieldset">
+                  <label className="label">Email</label>
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="input rounded-lg"
+                    placeholder="Email"
+                  />
+                  <label className="label">Password</label>
+                  <input
+                    type="password"
+                    className="input rounded-lg"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="Password"
+                  />
+                  <div className="flex justify-between items-center px-2">
+                    <Link to={""} className="link link-hover">
+                      Forgot password?
+                    </Link>
+                    <Link to={"/signup"} className="link link-hover mr-4">
+                      Signup
+                    </Link>
+                  </div>
+                  <input type="submit" value={"Login"} className="btn  mt-4" />
+                </fieldset>
+              </form>
             </div>
           </div>
         </div>

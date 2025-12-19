@@ -9,23 +9,19 @@ const Message = () => {
 
   return (
     <div className="">
-      <div className="mockup-phone h-screen bg-zinc-900">
-        <div className="mockup-phone-display text-white grid bg-neutral-900">
-          <div>
-            <MessageNav />
-          </div>
-          <div
-            style={{ height: "75vh", overflowY: "scroll" }}
-            className="px-4 scroll-bar"
-          >
-            <div>
-              <Msg />
-            </div>
-          </div>
-          <div>
-            <InputSendMessage />
-          </div>
+      <div>
+        <MessageNav />
+      </div>
+      <div
+        style={{ height: "82vh", overflowY: "scroll" }}
+        className="px-4 scroll-bar"
+      >
+        <div>
+          <Msg />
         </div>
+      </div>
+      <div>
+        <InputSendMessage />
       </div>
     </div>
   );
