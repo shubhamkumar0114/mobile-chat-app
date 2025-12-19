@@ -2,8 +2,8 @@ import React from "react";
 
 const Search = ({ setSearch }) => {
   return (
-    <div className="py-2">
-      <label className="input w-full outline-none border border-gray-700 rounded-lg">
+    <div className="py-2 ">
+      <label className="input w-full bg-zinc-900 outline-none border border-gray-800 rounded-lg">
         <svg
           className="h-[1em] opacity-50"
           xmlns="http://www.w3.org/2000/svg"

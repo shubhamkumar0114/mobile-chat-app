@@ -8,13 +8,13 @@ import { IoCallOutline } from "react-icons/io5";
 const Footer = () => {
   return (
     <div className="bg-zinc-800 rounded-md z-50 ">
-      <div className="tabs tabs-border  px-2 py-3 flex justify-evenly text-gray-100">
+      <div className="tabs tabs-border  px-2 py-3 flex justify-evenly text-white">
         <Link to={"/"}>
           <div className="flex flex-col justify-center items-center gap-[-15px]">
             <div>
               <MdOutlineChat />
             </div>
-            <div>
+            <div className="text-white">
               <input
                 type="radio"
                 name="my_tabs_2"
@@ -31,7 +31,7 @@ const Footer = () => {
             <div>
               <MdHistoryToggleOff />
             </div>
-            <div>
+            <div className="text-white">
               <input
                 type="radio"
                 name="my_tabs_2"
@@ -47,7 +47,7 @@ const Footer = () => {
             <div>
               <SiGooglemeet />
             </div>
-            <div>
+            <div className="text-white">
               <input
                 type="radio"
                 name="my_tabs_2"
@@ -62,7 +62,7 @@ const Footer = () => {
             <div>
               <IoCallOutline />
             </div>
-            <div>
+            <div className="text-white">
               <input
                 type="radio"
                 name="my_tabs_2"

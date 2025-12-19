@@ -6,7 +6,7 @@ import { CgProfile } from "react-icons/cg";
 const Navbar = ({ setPage }) => {
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm px-2 pt-2">
+      <div className="navbar bg-base-400 px-2 pt-2">
         <div className="flex-1">
           <Link to={"/"} className="btn btn-ghost text-[1rem] text-gray-400">
             Whatsapps
