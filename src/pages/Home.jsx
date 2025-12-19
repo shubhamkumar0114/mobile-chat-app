@@ -37,10 +37,13 @@ const Home = () => {
         <h1 className="font-semibold mb-2">Chats</h1>
         <div
           className="space-y-3 scroll-bar"
-          style={{ height: "60vh", overflowY: "scroll" }}
+          style={{ height: "64vh", overflowY: "scroll" }}
         >
           {filteruser?.map((user) => (
             <div key={user._id} onClick={() => handleSelectedUser(user)}>
+              <User user={user} />
+              <User user={user} />
+              <User user={user} />
               <User user={user} />
             </div>
           ))}

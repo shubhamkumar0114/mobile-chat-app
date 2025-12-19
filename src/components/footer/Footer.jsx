@@ -7,8 +7,8 @@ import { IoCallOutline } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <div className="bg-zinc-800 rounded-md z-50 pt-2">
-      <div className="tabs tabs-border px-2 flex justify-evenly text-gray-100">
+    <div className="bg-zinc-800 rounded-md z-50 ">
+      <div className="tabs tabs-border  px-2 py-3 flex justify-evenly text-gray-100">
         <Link to={"/"}>
           <div className="flex flex-col justify-center items-center gap-[-15px]">
             <div>

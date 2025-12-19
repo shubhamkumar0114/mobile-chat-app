@@ -23,7 +23,7 @@ const Layout = () => {
           <div className=" flex gap-2 bg-zinc-900">
             <div className="w-full md:w-[36vw] px-0">
               <Navbar setPage={setPage} />
-              <div className={`px-2 h-[75vh]`}>
+              <div className={`px-2 h-[78vh]`}>
                 {page ? component[page] : <Outlet />}
               </div>
               <div className="">

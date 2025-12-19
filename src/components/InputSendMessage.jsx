@@ -10,7 +10,7 @@ const InputSendMessage = () => {
   const handleSendMessage = () => {};
 
   return (
-    <div className="flex items-center gap-2 px-2 mx-2 mb-4 border border-zinc-700 rounded-full">
+    <div className="flex items-center gap-2 px-2 mx-2 border border-zinc-700 rounded-full">
       <input type="file" hidden name="" id="fileopen" />
       <button className=" text-[1.2rem] ml-2 rounded-full">
         <label htmlFor="fileopen" className="cursor-pointer">
