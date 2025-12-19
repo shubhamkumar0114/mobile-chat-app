@@ -1,0 +1,10 @@
+@plugin "daisyui";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.scroll-bar {
+    scrollbar-width: none;
+}
+
