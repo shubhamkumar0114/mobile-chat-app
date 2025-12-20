@@ -2,11 +2,15 @@ import React from 'react'
 import { useAuth } from '../contextApi/useAuth';
 import { IoCallOutline } from "react-icons/io5";
 import { CiVideoOn } from "react-icons/ci";
+import {Link} from "react-router-dom";
+import { IoMdArrowRoundBack } from "react-icons/io";
+
 const MessageNav = () => {
     const [authUser, selectedUser , setSelectedUser] = useAuth();
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-md pr-6 ">
+      <div className="navbar bg-zinc-800 shadow-md pr-6 text-white">
+        <Link to={"/"} onClick={()=> localStorage.removeItem("seletuser")}><IoMdArrowRoundBack/></Link>
         <div className="flex-1 flex items-center gap-0">
           <a className="pl-4 text-xl">
             <div className="avatar avatar-online avatar-placeholder">
@@ -15,7 +19,7 @@ const MessageNav = () => {
               </div>
             </div>
           </a>
-          <div className='pl-2 flex flex-col gap-0 mt-2'>
+          <div className='pl-2 flex flex-col gap-0 mt-1'>
             <h2 className='text-gray-300 text-[0.8rem]'>{selectedUser?.name}</h2>
             <small className='text-gray-400'>active</small>
           </div>

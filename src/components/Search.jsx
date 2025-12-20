@@ -25,6 +25,7 @@ const Search = ({ setSearch }) => {
           onChange={(e) => setSearch(e.target.value)}
           required
           placeholder="Search"
+          className="text-white placeholder:text-white"
         />
       </label>
     </div>

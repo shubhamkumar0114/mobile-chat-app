@@ -50,7 +50,6 @@ export const handleLogout = async () => {
 
 // get all users
 export const handleGetAllUser = async (authuser) => {
-  
   try {
     const res = await API.post(`/user/allusers/${authuser?._id}`, {
       headers: {
@@ -62,3 +61,32 @@ export const handleGetAllUser = async (authuser) => {
     toast.error(error?.response?.data.error);
   }
 };
+
+// send msg
+export const handleSendMsg = async (selectedUser, message , token) => {
+  // console.log(authuser._id , selectedUser._id , message)
+  const res = await API.post(
+    `/message/sendmessage/${selectedUser?._id}`,
+    { message },
+    {
+      withCredentials: true,
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+      },
+    }
+  );
+  console.log(res)
+};
+
+// receive msg
+export const handleGetMessage = async(selectedUser,token)=> {
+  const res = await API.get(`message/receivermessage/${selectedUser?._id}`, {
+    withCredentials: true,
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+    },
+  });
+  if(res) return res.data;
+}

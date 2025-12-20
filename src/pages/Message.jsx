@@ -3,12 +3,14 @@ import InputSendMessage from "../components/InputSendMessage";
 import { useAuth } from "../contextApi/useAuth";
 import Msg from "../components/Msg";
 import MessageNav from "../components/MessageNav";
+import { useGetMessage } from "../contextApi/useGetMessage";
 
 const Message = () => {
   const [authUser, selectedUser, setSelectedUser] = useAuth();
+  const [chat] = useGetMessage();
 
   return (
-    <div className="">
+    <div className="bg-zinc-900 h-screen">
       <div>
         <MessageNav />
       </div>
@@ -16,9 +18,11 @@ const Message = () => {
         style={{ height: "82vh", overflowY: "scroll" }}
         className="px-4 scroll-bar"
       >
-        <div>
-          <Msg />
-        </div>
+        {chat.map((msg, index) => (
+          <div key={index}>
+            <Msg msg={msg} />
+          </div>
+        ))}
       </div>
       <div>
         <InputSendMessage />

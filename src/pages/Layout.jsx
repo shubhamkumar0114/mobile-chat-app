@@ -18,8 +18,7 @@ const Layout = () => {
   return (
     <>
       <div>
-     
-          <div className=" flex gap-2 bg-zinc-900">
+          <div className=" flex gap-2 bg-zinc-900 text-white">
             <div className="w-full md:w-[36vw] px-0">
               <Navbar setPage={setPage} />
               <div className={`px-2 h-[78vh]`}>

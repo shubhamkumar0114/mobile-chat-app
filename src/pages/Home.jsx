@@ -42,9 +42,6 @@ const Home = () => {
           {filteruser?.map((user) => (
             <div key={user._id} onClick={() => handleSelectedUser(user)}>
               <User user={user} />
-              <User user={user} />
-              <User user={user} />
-              <User user={user} />
             </div>
           ))}
         </div>

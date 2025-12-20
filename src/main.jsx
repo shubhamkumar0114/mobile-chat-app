@@ -3,11 +3,14 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import { AuthProvider } from "./contextApi/useAuth.jsx";
+import UseGetMessage from "./contextApi/useGetMessage.jsx";
 
 createRoot(document.getElementById("root")).render(
   <AuthProvider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <UseGetMessage>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </UseGetMessage>
   </AuthProvider>
 );
